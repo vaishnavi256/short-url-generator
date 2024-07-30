@@ -4,14 +4,14 @@ const app = express();
 const path = require ("path");
 const {connectToMongoDB} = require("./connect");
 const URL = require ("./models/url")
-const PORT = 8008;
+const PORT = 8001;
 const cookieParser = require("cookie-parser");
 const {restrictToLoggedInUser, checkAuth} = require("./middleware/auth")
+
 // router
 const urlRoute = require("./routes/url");
 const staticRoute = require ("./routes/staticRouter");
 const userRoute = require("./routes/user");
-
 
 connectToMongoDB("mongodb://localhost:27017/shorturl");
 
