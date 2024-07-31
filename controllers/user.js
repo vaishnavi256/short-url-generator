@@ -25,7 +25,7 @@ async function handleLogin (req, res){
     
     const token = setUser(user);
     res.cookie("uid", token);
-    return res.render("home");
+    return res.json({token});
 }
 
 module.exports = {handleSignUp, handleLogin};
