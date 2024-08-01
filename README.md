@@ -1,0 +1,1 @@
+Developed a URL shortener that takes a long URL and returns a shortened version. Users can use this shortened URL to get redirected to the original website. Additionally, the shortener tracks the number of visits to each shortened URL, providing insights into how often each link is accessed.
